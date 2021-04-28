@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tint"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/userImage"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                app:srcCompat="@drawable/persoicon" />
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:text="userName"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#0894f8" />
+
+            <TextView
+                android:id="@+id/userDate"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="date"
+                android:text="10/12/1999" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_tweet"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/webView"
+            android:layout_toEndOf="@+id/bulogin"
+            android:layout_toRightOf="@+id/bulogin"
+            android:background="@color/white"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="left"
+
+            android:paddingRight="5dp"
+            android:paddingBottom="2dp"
+            android:text="Love new twitter feathers, looking forword for new addation feather"
+            android:textAlignment="gravity"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#040101"
+            android:textSize="18dp"
+            tools:ignore="ObsoleteLayoutParam" />
+
+        <ImageView
+            android:id="@+id/tweet_picture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="0"
+            android:adjustViewBounds="true"
+            android:background="@drawable/background"
+            android:maxHeight="400dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/tweets" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background"
+            android:layoutDirection="ltr"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="3dp"
+            android:paddingRight="3dp"
+            android:paddingBottom="5dp"
+            android:textDirection="ltr">
+
+            <TextView
+
+                android:id="@+id/tweet_Unlike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:background="@color/white"
+                android:text="UNLIKE"
+                android:visibility="visible"
+                android:src="@drawable/ic_favorite_border_black_24dp"
+               />
+            <TextView
+
+                android:id="@+id/tweet_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/like"
+                android:text="LIKE"
+                android:padding="2dp"
+                android:textColor="@color/black"
+                android:visibility="gone"
+                android:src="@drawable/ic_favorite_border_black_24dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
